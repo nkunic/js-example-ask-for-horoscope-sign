@@ -59,7 +59,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         ariesDescription
     );
-    userZodiacSignDescription.innerText = ariesDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + ariesDescription;
   } else if (userZodiacSignValue === 'taurus') {
     console.log(
       userNameValue +
@@ -68,7 +68,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         taurusDescription
     );
-    userZodiacSignDescription.innerText = taurusDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + taurusDescription;
   } else if (userZodiacSignValue === 'twins') {
     console.log(
       userNameValue +
@@ -77,7 +77,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         twinsDescription
     );
-    userZodiacSignDescription.innerText = twinsDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + twinsDescription;
   } else if (userZodiacSignValue === 'cancer') {
     console.log(
       userNameValue +
@@ -86,7 +86,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         cancerDescription
     );
-    userZodiacSignDescription.innerText = cancerDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + cancerDescription;
   } else if (userZodiacSignValue === 'lion') {
     console.log(
       userNameValue +
@@ -95,7 +95,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         lionDescription
     );
-    userZodiacSignDescription.innerText = lionDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + lionDescription;
   } else if (userZodiacSignValue === 'virgo') {
     console.log(
       userNameValue +
@@ -104,7 +104,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         virgoDescription
     );
-    userZodiacSignDescription.innerText = virgoDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + virgoDescription;
   } else if (userZodiacSignValue === 'libra') {
     console.log(
       userNameValue +
@@ -113,7 +113,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         libraDescription
     );
-    userZodiacSignDescription.innerText = libraDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + libraDescription;
   } else if (userZodiacSignValue === 'scorpio') {
     console.log(
       userNameValue +
@@ -122,7 +122,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         scorpioDescription
     );
-    userZodiacSignDescription.innerText = scorpioDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + scorpioDescription;
   } else if (userZodiacSignValue === 'sagittarius') {
     console.log(
       userNameValue +
@@ -131,7 +131,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         sagittariusDescription
     );
-    userZodiacSignDescription.innerText = sagittariusDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + sagittariusDescription;
   } else if (userZodiacSignValue === 'capricorn') {
     console.log(
       userNameValue +
@@ -140,7 +140,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         capricornDescription
     );
-    userZodiacSignDescription.innerText = capricornDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + capricornDescription;
   } else if (userZodiacSignValue === 'aquarius') {
     console.log(
       userNameValue +
@@ -149,7 +149,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         aquariusDescription
     );
-    userZodiacSignDescription.innerText = aquariusDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + aquariusDescription;
   } else if (userZodiacSignValue === 'pisces') {
     console.log(
       userNameValue +
@@ -158,7 +158,7 @@ function askUserForHoroscopeSign() {
         ' is a great sign. Description: ' +
         piscesDescription
     );
-    userZodiacSignDescription.innerText = piscesDescription;
+    userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + piscesDescription;
   }
 }
 
