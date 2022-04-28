@@ -10,23 +10,27 @@ import './css/style.css';
 /* Task: Create a program that asks the user what the zodiac sign is and print certain text for that zodiac sign in the console. */
 
 function askUserForHoroscopeSign() {
-
   /* User name */
   var userName = document.querySelector('#userName');
-  var userNameValue = prompt('Enter your name!');
+  //var userNameValue = prompt('Enter your name!');
   console.log(userNameValue);
   userName.innerText = userNameValue;
 
-  /* User horoscope sign */
-  var userHoroscopeSign = prompt('Unesite vaš horoskopski znak!');
-  console.log(userHoroscopeSign);
+  /* User zodiac sign */
+  var userZodiacSign = document.querySelector('#userZodiacSign');
+  //var userZodiacSignValue = prompt('Enter your zodiac sign!');
+  console.log(userZodiacSignValue);
+  userZodiacSign.innerText = userZodiacSignValue;
 
-  /* Horoscope signs description */
+  /* Zodiac signs description */
+  var userZodiacSignDescription = document.querySelector(
+    '#userZodiacSignDescription'
+  );
   var ariesDescription =
     'Ovnovi važe za žestoke, aktivne, pa čak i agresivne, sklone takmičenju i neumorne u odgovaranju na izove. Ali, ispod sve te borbenosti, strasti i ljubavi prema pobedi i priznanjima, leže skrivene dubine velikog i osetljivog srca. Ono što Ovan stvarno želi i za čim tajno žudi, jeste velika i prava ljubav – da vole i da se osećaju voljeno.';
-  var bullDescription =
+  var taurusDescription =
     'Bikovi su poznati kao najtvrdoglaviji znak u horoskopu, što potvrđuje činjenica da umeju da budu jako naporni odbijajući svaki argument protiv svog ubeđenja. Ipak, Bikovi su jako osetljivi i mili i najradije bi stalno bili takvi, samo što ih je život naučio da se to ne isplati. To znači da će Bik biti drag i ljubazan kad god mu drugi to omogućavaju, odnosno, kad su i sami pristojni i ljubazni, ali će zato pokazati snagu svoje tvrdoglavosti i protivljenja, ako pokušate da mu stanete na put.';
-  var twinDescription =
+  var twinsDescription =
     'Smatraju ih površnim, dvoličnim i nepromišljenim osobama, koje stalno menjaju mišljenje i idu iz veze u vezu. Ali Blizanci su fantastični prijatelji i za bliske ljude će uraditi bilo šta – sve što treba i više od toga. Ako ostavlja utisak da samo jurca i radi trista stvari odjednom, to ne znači da je Blizanac dezorganizovan i nehajan, nego da pokušava svima da ugodi.';
   var cancerDescription =
     'I same Rakove više izluđuje da slušaju o tome kako su emotivni, jer to negde znači i neuračunljivi i nestabilni, a Rakovi su zapravo mnogo jači nego što izgleda. Rakovi koriste svoje emocije da bi popravili svoju situaciju, a ne da bi je pogoršali i ispoljavaju svoje emocije kako bi ih sagledali i shvatili šta treba da rade. Rak ne beži od osećanja i u tome je puno pametniji od mnogih.';
@@ -47,102 +51,114 @@ function askUserForHoroscopeSign() {
   var piscesDescription =
     'Pošto većina ljudi misli da je snaga u sposobnosti da svoja osećanja sakriješ i iskontrolišeš, Ribe važe za preterane dramatičare. Ali, Ribe potpuno drugačije misle i pronalaze snagu i vitalnost u izražavanju svoje emotivnosti. One imaju zalihe unutrašnje snage, sa kojom idu kroz život prelazeći hrabro preko najvećih prepreka.';
 
-  if (userHoroscopeSign === 'ovan') {
+  if (userZodiacSign === 'aries') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         ariesDescription
     );
-  } else if (userHoroscopeSign === 'bik') {
+    userZodiacSignDescription.innerText = ariesDescription;
+  } else if (userZodiacSign === 'taurus') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
-        bullDescription
+        userZodiacSign +
+        ' is a great sign. Description: ' +
+        taurusDescription
     );
-  } else if (userHoroscopeSign === 'blizanac') {
+    userZodiacSignDescription.innerText = taurusDescription;
+  } else if (userZodiacSign === 'twins') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
-        twinDescription
+        userZodiacSign +
+        ' is a great sign. Description: ' +
+        twinsDescription
     );
-  } else if (userHoroscopeSign === 'rak') {
+    userZodiacSignDescription.innerText = twinsDescription;
+  } else if (userZodiacSign === 'cancer') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         cancerDescription
     );
-  } else if (userHoroscopeSign === 'lav') {
+    userZodiacSignDescription.innerText = cancerDescription;
+  } else if (userZodiacSign === 'lion') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         lionDescription
     );
-  } else if (userHoroscopeSign === 'devica') {
+    userZodiacSignDescription.innerText = lionDescription;
+  } else if (userZodiacSign === 'virgo') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         virgoDescription
     );
-  } else if (userHoroscopeSign === 'vaga') {
+    userZodiacSignDescription.innerText = virgoDescription;
+  } else if (userZodiacSign === 'libra') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         libraDescription
     );
-  } else if (userHoroscopeSign === 'škorpija') {
+    userZodiacSignDescription.innerText = libraDescription;
+  } else if (userZodiacSign === 'scorpio') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         scorpioDescription
     );
-  } else if (userHoroscopeSign === 'strelac') {
+    userZodiacSignDescription.innerText = scorpioDescription;
+  } else if (userZodiacSign === 'sagittarius') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         sagittariusDescription
     );
-  } else if (userHoroscopeSign === 'jarac') {
+    userZodiacSignDescription.innerText = sagittariusDescription;
+  } else if (userZodiacSign === 'capricorn') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         capricornDescription
     );
-  } else if (userHoroscopeSign === 'vodolija') {
+    userZodiacSignDescription.innerText = capricornDescription;
+  } else if (userZodiacSign === 'aquarius') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         aquariusDescription
     );
-  } else if (userHoroscopeSign === 'ribe') {
+    userZodiacSignDescription.innerText = aquariusDescription;
+  } else if (userZodiacSign === 'pisces') {
     console.log(
       userNameValue +
         ' ' +
-        userHoroscopeSign +
-        ' je super znak. Opis: ' +
+        userZodiacSign +
+        ' is a great sign. Description: ' +
         piscesDescription
     );
+    userZodiacSignDescription.innerText = piscesDescription;
   }
 }
 
