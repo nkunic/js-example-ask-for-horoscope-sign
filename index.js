@@ -51,110 +51,110 @@ function askUserForHoroscopeSign() {
   var piscesDescription =
     'Since most people think that strength is the ability to hide and control your feelings, Pisces is considered an excessive playwright. But Pisces think completely differently and find strength and vitality in expressing their emotionality. They have a supply of inner strength, with which they go through life, bravely overcoming the greatest obstacles.';
 
-  if (userZodiacSign === 'aries') {
+  if (userZodiacSignValue === 'aries') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         ariesDescription
     );
     userZodiacSignDescription.innerText = ariesDescription;
-  } else if (userZodiacSign === 'taurus') {
+  } else if (userZodiacSignValue === 'taurus') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         taurusDescription
     );
     userZodiacSignDescription.innerText = taurusDescription;
-  } else if (userZodiacSign === 'twins') {
+  } else if (userZodiacSignValue === 'twins') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         twinsDescription
     );
     userZodiacSignDescription.innerText = twinsDescription;
-  } else if (userZodiacSign === 'cancer') {
+  } else if (userZodiacSignValue === 'cancer') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         cancerDescription
     );
     userZodiacSignDescription.innerText = cancerDescription;
-  } else if (userZodiacSign === 'lion') {
+  } else if (userZodiacSignValue === 'lion') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         lionDescription
     );
     userZodiacSignDescription.innerText = lionDescription;
-  } else if (userZodiacSign === 'virgo') {
+  } else if (userZodiacSignValue === 'virgo') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         virgoDescription
     );
     userZodiacSignDescription.innerText = virgoDescription;
-  } else if (userZodiacSign === 'libra') {
+  } else if (userZodiacSignValue === 'libra') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         libraDescription
     );
     userZodiacSignDescription.innerText = libraDescription;
-  } else if (userZodiacSign === 'scorpio') {
+  } else if (userZodiacSignValue === 'scorpio') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         scorpioDescription
     );
     userZodiacSignDescription.innerText = scorpioDescription;
-  } else if (userZodiacSign === 'sagittarius') {
+  } else if (userZodiacSignValue === 'sagittarius') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         sagittariusDescription
     );
     userZodiacSignDescription.innerText = sagittariusDescription;
-  } else if (userZodiacSign === 'capricorn') {
+  } else if (userZodiacSignValue === 'capricorn') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         capricornDescription
     );
     userZodiacSignDescription.innerText = capricornDescription;
-  } else if (userZodiacSign === 'aquarius') {
+  } else if (userZodiacSignValue === 'aquarius') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         aquariusDescription
     );
     userZodiacSignDescription.innerText = aquariusDescription;
-  } else if (userZodiacSign === 'pisces') {
+  } else if (userZodiacSignValue === 'pisces') {
     console.log(
       userNameValue +
         ' ' +
-        userZodiacSign +
+        userZodiacSignValue +
         ' is a great sign. Description: ' +
         piscesDescription
     );
