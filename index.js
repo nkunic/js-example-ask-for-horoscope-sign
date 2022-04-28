@@ -1,15 +1,21 @@
 // Import stylesheets
-import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './css/style.css';
 
 // Write Javascript code!
 
+/*** ASK FOR HOROSCOPE SIGN ***/
 
-/* Zadatak: Napraviti program koji pita korisnika koji je horoskopski znak i ispisati određeni tekst za taj horoskopski znak u konzoli. */
+/* Task: Create a program that asks the user what the zodiac sign is and print certain text for that zodiac sign in the console. */
 
 function askUserForHoroscopeSign() {
+
   /* User name */
-  var userName = prompt('Unesite vaše ime!');
-  console.log(userName);
+  var userName = document.querySelector('#userName');
+  var userNameValue = prompt('Enter your name!');
+  console.log(userNameValue);
+  userName.innerText = userNameValue;
 
   /* User horoscope sign */
   var userHoroscopeSign = prompt('Unesite vaš horoskopski znak!');
@@ -43,7 +49,7 @@ function askUserForHoroscopeSign() {
 
   if (userHoroscopeSign === 'ovan') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -51,7 +57,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'bik') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -59,7 +65,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'blizanac') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -67,7 +73,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'rak') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -75,7 +81,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'lav') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -83,7 +89,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'devica') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -91,7 +97,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'vaga') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -99,7 +105,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'škorpija') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -107,7 +113,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'strelac') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -115,7 +121,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'jarac') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -123,7 +129,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'vodolija') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
@@ -131,7 +137,7 @@ function askUserForHoroscopeSign() {
     );
   } else if (userHoroscopeSign === 'ribe') {
     console.log(
-      userName +
+      userNameValue +
         ' ' +
         userHoroscopeSign +
         ' je super znak. Opis: ' +
