@@ -18,14 +18,13 @@ function askUserForHoroscopeSign() {
 
   /* User zodiac sign */
   var userZodiacSign = document.querySelector('#userZodiacSign');
-  var userZodiacSignValue = prompt('Enter your zodiac sign!');
+  var userZodiacSignValue = prompt('Enter your zodiac sign:' + "\nAries, Taurus, Twins, Cancer, Lion, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces");
   console.log(userZodiacSignValue);
   userZodiacSign.innerText = userZodiacSignValue;
 
   /* Zodiac signs description */
-  var userZodiacSignDescription = document.querySelector(
-    '#userZodiacSignDescription'
-  );
+  var userZodiacSignDescription = document.querySelector('#userZodiacSignDescription'
+);
   var ariesDescription =
     'Aries is considered fierce, active, and even aggressive, prone to competition and tireless in responding to challenges. But, beneath all that fighting spirit, passion and love for victory and recognition, lie the hidden depths of a big and sensitive heart. What Aries really wants and what he secretly longs for is great and true love - to love and to feel loved.';
   var taurusDescription =
@@ -51,7 +50,7 @@ function askUserForHoroscopeSign() {
   var piscesDescription =
     'Since most people think that strength is the ability to hide and control your feelings, Pisces is considered an excessive playwright. But Pisces think completely differently and find strength and vitality in expressing their emotionality. They have a supply of inner strength, with which they go through life, bravely overcoming the greatest obstacles.';
 
-  if (userZodiacSignValue === 'aries') {
+  if (userZodiacSignValue === 'Aries') {
     console.log(
       userNameValue +
         ' ' +
@@ -60,7 +59,7 @@ function askUserForHoroscopeSign() {
         ariesDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + ariesDescription;
-  } else if (userZodiacSignValue === 'taurus') {
+  } else if (userZodiacSignValue === 'Taurus') {
     console.log(
       userNameValue +
         ' ' +
@@ -69,7 +68,7 @@ function askUserForHoroscopeSign() {
         taurusDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + taurusDescription;
-  } else if (userZodiacSignValue === 'twins') {
+  } else if (userZodiacSignValue === 'Twins') {
     console.log(
       userNameValue +
         ' ' +
@@ -78,7 +77,7 @@ function askUserForHoroscopeSign() {
         twinsDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + twinsDescription;
-  } else if (userZodiacSignValue === 'cancer') {
+  } else if (userZodiacSignValue === 'Cancer') {
     console.log(
       userNameValue +
         ' ' +
@@ -87,7 +86,7 @@ function askUserForHoroscopeSign() {
         cancerDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + cancerDescription;
-  } else if (userZodiacSignValue === 'lion') {
+  } else if (userZodiacSignValue === 'Lion') {
     console.log(
       userNameValue +
         ' ' +
@@ -96,7 +95,7 @@ function askUserForHoroscopeSign() {
         lionDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + lionDescription;
-  } else if (userZodiacSignValue === 'virgo') {
+  } else if (userZodiacSignValue === 'Virgo') {
     console.log(
       userNameValue +
         ' ' +
@@ -105,7 +104,7 @@ function askUserForHoroscopeSign() {
         virgoDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + virgoDescription;
-  } else if (userZodiacSignValue === 'libra') {
+  } else if (userZodiacSignValue === 'Libra') {
     console.log(
       userNameValue +
         ' ' +
@@ -114,7 +113,7 @@ function askUserForHoroscopeSign() {
         libraDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + libraDescription;
-  } else if (userZodiacSignValue === 'scorpio') {
+  } else if (userZodiacSignValue === 'Scorpio') {
     console.log(
       userNameValue +
         ' ' +
@@ -123,7 +122,7 @@ function askUserForHoroscopeSign() {
         scorpioDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + scorpioDescription;
-  } else if (userZodiacSignValue === 'sagittarius') {
+  } else if (userZodiacSignValue === 'Sagittarius') {
     console.log(
       userNameValue +
         ' ' +
@@ -132,7 +131,7 @@ function askUserForHoroscopeSign() {
         sagittariusDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + sagittariusDescription;
-  } else if (userZodiacSignValue === 'capricorn') {
+  } else if (userZodiacSignValue === 'Capricorn') {
     console.log(
       userNameValue +
         ' ' +
@@ -141,7 +140,7 @@ function askUserForHoroscopeSign() {
         capricornDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + capricornDescription;
-  } else if (userZodiacSignValue === 'aquarius') {
+  } else if (userZodiacSignValue === 'Aquarius') {
     console.log(
       userNameValue +
         ' ' +
@@ -150,7 +149,7 @@ function askUserForHoroscopeSign() {
         aquariusDescription
     );
     userZodiacSignDescription.innerText = userNameValue + ' ' + userZodiacSignValue + ' is a great sign. ' + aquariusDescription;
-  } else if (userZodiacSignValue === 'pisces') {
+  } else if (userZodiacSignValue === 'Pisces') {
     console.log(
       userNameValue +
         ' ' +
